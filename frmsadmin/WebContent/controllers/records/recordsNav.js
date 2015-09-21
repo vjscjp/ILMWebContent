@@ -3,13 +3,13 @@ define(["dojo/dom", "dojo/on", "dojo/_base/lang"], function(dom, on, lang) {
     "use strict";
     return {
         init: function() {
-            var create = dom.byId("btnCreateRecord_recordsNav"),
+            /*var create = dom.byId("btnCreateRecord_recordsNav"),
             	modify = dom.byId("btnModifyRecord_recordsNav"),
-                search = dom.byId("btnSearchRecords_recordsNav");
-            on(create, "click", lang.hitch(this, function(e) {
+                search = dom.byId("btnSearchRecords_recordsNav");*/
+            on(this.btnCreateRecords_recordsNav, "click", lang.hitch(this, function(e) {
                 this.transitionTo(e, "recordsCreate");
             }));
-            on(modify, "click", lang.hitch(this, function(e) {
+            on(this.btnModifyRecords_recordsNav, "click", lang.hitch(this, function(e) {
                 this.transitionTo(e, "recordsViewModify");
             }));
             /*on(search, "click", lang.hitch(this, function(e) {

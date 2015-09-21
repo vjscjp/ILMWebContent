@@ -3,7 +3,7 @@
 	<div id="displayName_recordCreate" data-dojo-attach-point="displayName_recordCreate"> </div>
 	<div id="displayErrorMsg_recordCreate" data-dojo-attach-point="displayErrorMsg_recordCreate"> </div>
 	<div id="displayInfoMsg_recordCreate" data-dojo-attach-point="displayInfoMsg_recordCreate"> </div>
-		
+	<div data-dojo-attach-point="recordsSearchContainer"></div>
 	<form id="form_recordCreate" data-dojo-type="dijit/form/Form">
 	<!-- <div class="l_row_pad l_as_table"> -->
 	  <!-- <div class="container column" style="background-color: #ececec;border: 1px solid black;"><b>Record</b></div> -->
@@ -114,9 +114,9 @@
 	</div>-->
         </form>	
         <div class="l_row_pad">
-            <button id="btnSave_recordsCreate" type="button" data-dojo-type="dijit/form/Button">Save</button>
-            <button id="btnCancel_recordsCreate" type="button" data-dojo-type="dijit/form/Button">Cancel</button>
-			<button id="historyBtn_recordsCreate" type="button" data-dojo-type="dijit/form/Button">History</button> 
+            <button data-dojo-attach-point="btnSave_recordsCreate" type="button" data-dojo-type="dijit/form/Button">Save</button>
+            <button data-dojo-attach-point="btnCancel_recordsCreate" type="button" data-dojo-type="dijit/form/Button">Cancel</button>
+			<button data-dojo-attach-point="historyBtn_recordsCreate" type="button" data-dojo-type="dijit/form/Button">History</button> 
         </div>
        
 </div>
